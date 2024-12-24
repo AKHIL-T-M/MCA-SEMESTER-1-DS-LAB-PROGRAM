@@ -76,62 +76,62 @@ void push ()
 int value;
 struct node *ptr = (struct node*)malloc(sizeof(struct node)); //Dynamically allocates memory
 if(ptr == NULL)
-{
-printf("Memory not allocated");
-}
-else
-{
-printf("Enter the value");
-scanf("%d",&value);
-if(head==NULL)
-{
-ptr->val = value; 
-ptr-> next = NULL; 
-head=ptr; 
-}
-else
-{
-ptr->val = value;
-ptr->next = head;
-head=ptr; 
-}
-printf("Item pushed");
-}
+	{
+	printf("Memory not allocated");
+	}
+	else
+	{
+	printf("Enter the value");
+	scanf("%d",&value);
+	if(head==NULL)
+	{
+	ptr->val = value; 
+	ptr-> next = NULL; 
+	head=ptr; 
+	}
+	else
+	{
+	ptr->val = value;
+	ptr->next = head;
+	head=ptr; 
+	}
+	printf("Item pushed");
+	}
 }
 void pop()
 {
 int item;
 struct node *ptr;
 if (head == NULL)
-{
-printf("Underflow");
-}
-else
-{
-item = head->val;
-ptr = head;
-head = head->next; 
-free(ptr); 
-printf("Item popped");
-}
+	{
+	printf("Underflow");
+	}
+	else
+	{
+	item = head->val;
+	ptr = head;
+	head = head->next; 
+	free(ptr); 
+	printf("Item popped");
+	}
 }
 void display()
 {
-int i;
-struct node *ptr;
-ptr=head;
-if(ptr == NULL)
-{
-printf("Stack is empty\n");
-}
-else
-{
-printf("Printing Stack Elements \n");
-while(ptr!=NULL)
-{
-printf("%d\n",ptr->val);
-ptr=ptr->next;
-}
-}
+	int i;
+	struct node *ptr;
+	ptr=head;
+	if(ptr == NULL)
+	{
+	printf("Stack is empty\n");
+	}
+	else
+	{
+	printf("Printing Stack Elements \n");
+	while(ptr!=NULL)
+		{
+		printf("%d\n",ptr->val);
+		ptr=ptr->next;
+		}
+	}
 }
 
