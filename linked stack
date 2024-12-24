@@ -40,7 +40,7 @@ void main ()
   {
     printf("\n\nChose one from the below options...\n");
     printf("\n1.Push\n2.Pop\n3.Show\n4.Exit");
-    printf("\n Enter your choice \n");
+    printf("\nEnter your choice: ");
     scanf("%d",&choice);
     switch(choice)
       {
@@ -81,7 +81,7 @@ if(ptr == NULL)
 	}
 	else
 	{
-	printf("Enter the value");
+	printf("Enter the value: ");
 	scanf("%d",&value);
 	if(head==NULL)
 	{
