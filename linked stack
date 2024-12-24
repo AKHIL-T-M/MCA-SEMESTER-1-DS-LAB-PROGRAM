@@ -5,8 +5,8 @@ step 2 : initialize the varibales and linked stack as globally.
 step 3 : Initialze the functions for each operations.
 step 4 : Ask user to select an linked stack operation and call the proper function.
 step 5 : 
-	      5.1 : push()
-		    Create a node using malloc ,if pointer is null display 'memory not allocated" else ask user to enter value and check where to enter. 
+	5.1 : push()
+	Create a node using malloc ,if pointer is null display 'memory not allocated" else ask user to enter value and check where to enter. 
         a)head equals to null then set value into pointer and set pointer next as null also point head to that new node.
         b) else set value to pointer and set pointer next equal to head and set head to pointer.
         5.1 : pop()
