@@ -9,7 +9,6 @@ program
  };
  struct Node* createNode(int data){
  struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
- //for created node (newNode)
  newNode->data = data;
  newNode->next = NULL;
  return newNode;
