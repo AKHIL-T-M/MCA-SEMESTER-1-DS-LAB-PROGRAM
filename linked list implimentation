@@ -15,7 +15,8 @@ b)update the previous node's next pointer to skip the deleted node
 after deleting free up the memory of deleted node
 5.4 Show (): Traverse the list starting from head print the data of each node followed by an arrow then print "NULL" at the end to indicate the list's termination.
 5.5 Exit (): Terminate the program.
-step 6 : stop.
+step 6 : Print proper result.
+step 7 : stop.
 
 program
 
