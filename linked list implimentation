@@ -1,3 +1,22 @@
+Algorithm
+step 1 : Start.
+step 2 : initialize the varibales and linked list as globally.
+step 3 : Initialze the functions for each operations.
+step 4 : Ask user to select an linked stack operation and call the proper function.
+step 5 : 
+5.1 Insert at Beginning ():
+Create a new node then set the new node's next pointer to the current head update head to point to the new node
+5.2 Insert at End (): 
+Create a new node if head is NULL set head to the new node otherwise, traverse the list to find the last node Set the last node's next pointer to the new node
+5.3 Delete():
+if the list is empty then print "List Empty" if not get the key to be deleted and traverse list to find the node with the key. If the key is not found print "Key not found in the list" . if key found then 
+a)check If it's the first node,update head to point to the second node
+b)update the previous node's next pointer to skip the deleted node 
+after deleting free up the memory of deleted node
+5.4 Show (): Traverse the list starting from head print the data of each node followed by an arrow then print "NULL" at the end to indicate the list's termination.
+5.5 Exit (): Terminate the program.
+step 6 : stop.
+
 program
 
  #include <stdio.h>
